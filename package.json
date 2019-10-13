@@ -1,0 +1,23 @@
+{
+  "name": "lifx-tile-example-effects",
+  "version": "0.1.0",
+  "description": "A collection of example LIFX Tile effects.",
+  "main": "./lifx-tile-example-effects.js",
+  "keywords": [
+    "lifx",
+    "tile",
+    "effects",
+    "examples",
+    "lights",
+    "node",
+    "javascript",
+    "lan",
+    "api"
+  ],
+  "author": "James Furey (https://github.com/furey)",
+  "url": "https://github.com/furey",
+  "license": "ISC",
+  "dependencies": {
+    "lifx-tile-effects-framework": "github:furey/lifx-tile-effects-framework"
+  }
+}
