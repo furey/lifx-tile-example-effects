@@ -26,8 +26,7 @@ module.exports = class {
   }
 
   async step() {
-    const firstColor = this.tileColors[0]
-    this.tileColors = [...this.tileColors.slice(1), firstColor]
+    this.tileColors = [...this.tileColors.slice(1), this.tileColors[0]]
     await this.updateTiles()
   }
 

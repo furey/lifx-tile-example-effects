@@ -20,17 +20,13 @@ module.exports = class {
   }
 
   async step() {
-    await this.updateTiles()
-  }
-
-  async updateTiles() {
     for (let i = 0; i < this.tiles.length; i++) {
       const tile = this.tiles[i]
       await this.device.tileSetTileState64({
         tile_index: tile.tile_index,
         colors: [...Array(64)].fill({
           hue: Math.floor(Math.random() * 360)/360,
-          brightness: 1,
+          brightness: 1
         })
       }).catch(console.error)  
     }

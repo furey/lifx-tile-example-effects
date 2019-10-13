@@ -20,10 +20,6 @@ module.exports = class {
   }
 
   async step() {
-    await this.updateTiles()
-  }
-
-  async updateTiles() {
     await this.device.tileSetTileState64({
       tile_index: this.tiles[0].tile_index,
       length: this.tiles.length,
