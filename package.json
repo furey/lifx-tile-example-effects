@@ -1,6 +1,6 @@
 {
   "name": "lifx-tile-example-effects",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A collection of example LIFX Tile effects.",
   "main": "./lifx-tile-example-effects.js",
   "keywords": [
