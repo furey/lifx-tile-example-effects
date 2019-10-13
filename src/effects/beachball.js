@@ -10,10 +10,9 @@ module.exports = class {
     return { saturation: 1, brightness: 0, kelvin: 9000 }
   }
 
-  constructor({ device, tiles, bounds }) {
+  constructor({ device, tiles }) {
     this.device = device
     this.tiles = tiles
-    this.bounds = bounds
     this.beachballColors = ['r', 'y', 'g', 'b', 'm']
     this.tileColors = this.tiles.map((_, i) =>
       this.beachballColors[i % this.beachballColors.length]
