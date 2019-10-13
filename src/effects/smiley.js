@@ -7,7 +7,7 @@ const frames = {
 }
 
 module.exports = class {
-  
+
   static getFlushColor() {
     return noColor
   }

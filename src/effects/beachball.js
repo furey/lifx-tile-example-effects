@@ -1,13 +1,13 @@
 const { parseColor } = require('lifx-tile-effects-framework').utils
 
 module.exports = class {
-  
-  static async create({ device, tiles, bounds }) {
-    return await (new this({ device, tiles, bounds })).boot()
-  }
 
   static getFlushColor() {
     return { saturation: 1, brightness: 0, kelvin: 9000 }
+  }
+  
+  static async create({ device, tiles, bounds }) {
+    return await (new this({ device, tiles, bounds })).boot()
   }
 
   constructor({ device, tiles }) {

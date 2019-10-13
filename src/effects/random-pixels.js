@@ -1,11 +1,11 @@
 module.exports = class {
-  
-  static async create({ device, tiles }) {
-    return await (new this({ device, tiles })).boot()
-  }
 
   static getFlushColor() {
     return { hue: 0, saturation: 1, brightness: 0, kelvin: 9000 }
+  }
+
+  static async create({ device, tiles }) {
+    return await (new this({ device, tiles })).boot()
   }
 
   constructor({ device, tiles }) {
