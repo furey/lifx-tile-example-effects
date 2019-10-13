@@ -18,6 +18,6 @@
   "url": "https://github.com/furey",
   "license": "ISC",
   "dependencies": {
-    "lifx-tile-effects-framework": "github:furey/lifx-tile-effects-framework#semver:^1.0.0"
+    "lifx-tile-effects-framework": "github:furey/lifx-tile-effects-framework#semver:^v1"
   }
 }
