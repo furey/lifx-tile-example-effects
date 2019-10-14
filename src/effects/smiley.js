@@ -1,10 +1,6 @@
 const { parseColor, parseColors } = require('lifx-tile-effects-framework').utils
-const kelvin = 9000
-const noColor = parseColor('white', { brightness: 0, kelvin })
-const frames = {
-  solid: parseColors(require('../frames/smiley/solid')),
-  inverted: parseColors(require('../frames/smiley/inverted'))
-}
+const noColor = parseColor('yellow', { brightness: 0 })
+const frame = parseColors(require('../frames/smiley'))
 
 module.exports = class {
 
@@ -33,8 +29,8 @@ module.exports = class {
       this.tiles[i] = {
         ...tile,
         state: i % 2
-          ? 'solid'
-          : 'inverted',
+          ? 'show'
+          : 'hide',
       }
     }
   }
@@ -49,9 +45,9 @@ module.exports = class {
       const tile = this.tiles[i]
       this.tiles[i] = {
         ...tile,
-        state: tile.state === 'solid'
-          ? 'inverted'
-          : 'solid'
+        state: tile.state === 'show'
+          ? 'hide'
+          : 'show'
       }
     }
   }
@@ -62,7 +58,10 @@ module.exports = class {
       await this.device.tileSetTileState64({
         tile_index: tile.tile_index,
         length: 1,
-        colors: frames[tile.state]
+        duration: 250,
+        colors: tile.state === 'show'
+          ? frame
+          : Array(64).fill(noColor)
       }).catch(console.error)  
     }
   }
