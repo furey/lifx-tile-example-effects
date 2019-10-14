@@ -43,14 +43,15 @@ $ npm ci
 $ node lifx-tile-example-effects
 
 ? Choose an effect …
-❯ beachball
-  random-color
+  beachball
+❯ random-color
   random-colors
   random-pixels
   smiley
+  tie-dye
 
-✔ Choose an effect · beachball
-Starting beachball effect… (press [ctrl+c] to exit)
+✔ Choose an effect · random-color
+Starting random-color effect… (press [ctrl+c] to exit)
 ```
 
 ## Help
