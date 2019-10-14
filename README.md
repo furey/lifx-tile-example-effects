@@ -34,7 +34,7 @@ $ cd lifx-tile-example-effects
 Install the repository dependencies:
 
 ```console
-$ npm install
+$ npm ci
 ```
 
 ## Usage
@@ -61,13 +61,13 @@ $ node lifx-tile-example-effects --help
 Usage: node lifx-tile-example-effects [options]
 
 Options:
-  --effect, -e   Effect name
+  --effect, -e       Effect name
                 [string] [choices: "beachball", "random-color", "random-colors",
                                                       "random-pixels", "smiley"]
-  --clear, -c    Clear device cache                                    [boolean]
-  --verbose, -v  Show debug logs                                       [boolean]
-  --version, -V  Show version number                                   [boolean]
-  --help, -h     Show help                                             [boolean]
+  --clear-cache, -c  Clear device cache                                [boolean]
+  --verbose, -v      Show debug logs                                   [boolean]
+  --version, -V      Show version number                               [boolean]
+  --help, -h         Show help                                         [boolean]
 
 Examples:
   node lifx-tile-example-effects --effect beachball
