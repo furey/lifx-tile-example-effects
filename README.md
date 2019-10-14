@@ -63,7 +63,7 @@ Usage: node lifx-tile-example-effects [options]
 Options:
   --effect, -e       Effect name
                 [string] [choices: "beachball", "random-color", "random-colors",
-                                                      "random-pixels", "smiley"]
+                                           "random-pixels", "smiley", "tie-dye"]
   --clear-cache, -c  Clear device cache                                [boolean]
   --verbose, -v      Show debug logs                                   [boolean]
   --version, -V      Show version number                               [boolean]
