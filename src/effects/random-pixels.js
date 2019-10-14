@@ -1,7 +1,7 @@
 module.exports = class {
 
   static getFlushColor() {
-    return { hue: 0, saturation: 1, brightness: 0, kelvin: 9000 }
+    return { saturation: 0, brightness: 0, kelvin: 9000 }
   }
 
   static async create({ device, tiles }) {
@@ -26,6 +26,7 @@ module.exports = class {
         duration: 500,
         colors: [...Array(64)].map(() => ({
           hue: Math.floor(Math.random() * 360)/360,
+          saturation: 1,
           brightness: 1,
         }))
       }).catch(console.error)  
