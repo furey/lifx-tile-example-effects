@@ -13,11 +13,25 @@ A collection of example [LIFX Tile](https://www.lifx.com/collections/creative-ti
 
 ## Requirements
 
-- `node -v` >= v12.10.0
-- `npm -v` >= 6.10.3
+- [`node -v`](https://nodejs.org/en/download/current/) >= `v12.10.*`
+- [`npm -v`](https://www.npmjs.com/get-npm) >= `6.10.*`
 - One or more [LIFX Tiles](https://www.lifx.com/collections/creative-tiles) accessible via LAN
 
 ## Installation
+
+Clone (or [download](https://github.com/furey/lifx-tile-example-effects/archive/master.zip)) the repository:
+
+```console
+$ git clone https://github.com/furey/lifx-tile-example-effects.git
+```
+
+Navigate to the repository directory:
+
+```console
+$ cd lifx-tile-example-effects
+```
+
+Install the repository dependencies:
 
 ```console
 $ npm install
