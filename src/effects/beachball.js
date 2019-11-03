@@ -6,8 +6,8 @@ module.exports = class {
     return { saturation: 1, brightness: 0, kelvin: 9000 }
   }
   
-  static async create({ device, tiles, bounds }) {
-    return await (new this({ device, tiles, bounds })).boot()
+  static async create({ device, tiles }) {
+    return await (new this({ device, tiles })).boot()
   }
 
   constructor({ device, tiles }) {
